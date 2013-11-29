@@ -1,5 +1,4 @@
-import maingame
-from maingame import Scene, Engine, Map
+from ex45game import *
 
 class Death(Scene):
 
@@ -154,3 +153,7 @@ class EscapePod(Scene):
             print "time.  You won!"
 
             return 'finished'
+
+a_map = Map('central_corridor')
+a_game = Engine(a_map)
+a_game.play()
