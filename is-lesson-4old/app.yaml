@@ -1,0 +1,29 @@
+application: is-lesson-4
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: .*
+  script: main.app
+
+libraries:
+- name: webapp2
+  version: latest
+
+- name: jinja2
+      version: latest
+
+- name: os
+  version: latest
+
+- name: webapp2
+  version: latest
+
+- name: db
+  version: latest
